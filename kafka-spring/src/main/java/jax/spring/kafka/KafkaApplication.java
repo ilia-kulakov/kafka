@@ -3,18 +3,11 @@ package jax.spring.kafka;
 import jax.spring.kafka.consumer.KafkaConsumer;
 import jax.spring.kafka.model.Greeting;
 import jax.spring.kafka.producer.KafkaProducer;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.kafka.core.KafkaTemplate;
-import org.springframework.kafka.support.SendResult;
-import org.springframework.util.concurrent.ListenableFutureCallback;
 
-import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
-import java.util.stream.Stream;
 
 @SpringBootApplication
 public class KafkaApplication {
